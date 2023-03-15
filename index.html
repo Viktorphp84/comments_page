@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style\style.css" type="text/css">
+</head>
+<body>
+    <img class="logo" src="images\logo.svg" alt="logotype">
+    <h1>Девушка из песка</h1>
+    <img src="images\sandy_girl.png" alt="sandy girl">
+    <form name="comment-form">
+        <legend>Комментарии к фото:</legend>
+        <textarea name="comment-form__text"></textarea>
+        <span>Имя</span>
+        <div class="comment-form__block-name">
+            <input name="comment-form__name" type="text" value="" placeholder="Ваше имя" required minlength="3">
+            <span class="comment-form__error"></span>
+        </div>
+        <span>Дата</span>
+        <div class="comment-form__block-date">
+            <input name="comment-form__date" type="date" required>
+            <span class="comment-form__error-date"></span>
+        </div>
+        <input name="comment-form__submit" type="submit" value="Отправить">
+    </form>
+    <div class="comments">
+        <div class="comments__one-comment">
+            <div class="comments__content">
+                <span class="comments__name"></span>
+                <span class="comments__text"></span>
+            </div>
+            <div class="comments__control">
+                <span class="comments__date"></span>
+                <div class="comments__icons">
+                    <img class="comments__like" src="images\heart-black.svg">
+                    <img class="comments__basket" src="images\waste-basket-svgrepo-com.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts\script.js"></script>
+</body>
+</html>
